@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_X5HnQJx7EeuK3ZK9ggu-hQ" name="Practica5">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Y1nEsJx7EeuK3ZK9ggu-hQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_DIolcJx8EeuK3ZK9ggu-hQ" name="practica5">
+    <packagedElement xmi:type="uml:Class" xmi:id="_80k3QJ1IEeusd9_7LlRBLQ" name="maquinaLavado">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PzWOYJ1JEeusd9_7LlRBLQ" name="capaLitros">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w9LWAJ1JEeusd9_7LlRBLQ" name="tiempoLavado">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xamHYKCiEeu73aUlD-mXoA" name="maquina" type="_YMR6QKChEeu73aUlD-mXoA" association="_xaidAKCiEeu73aUlD-mXoA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xapKsKCiEeu73aUlD-mXoA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xapxwKCiEeu73aUlD-mXoA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_D3KJMJ1JEeusd9_7LlRBLQ" name="maquinaLlenado">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_D2JnIJ1KEeusd9_7LlRBLQ" name="cantEnvases">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_svylIKCiEeu73aUlD-mXoA" name="maquina" type="_YMR6QKChEeu73aUlD-mXoA" association="_svtFkKCiEeu73aUlD-mXoA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sv1BYKCiEeu73aUlD-mXoA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sv22kKCiEeu73aUlD-mXoA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HPKm0J1JEeusd9_7LlRBLQ" name="maquinaEmpacado">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XyA4oJ1KEeusd9_7LlRBLQ" name="carton">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iIxjIKCiEeu73aUlD-mXoA" name="maquina" type="_YMR6QKChEeu73aUlD-mXoA" association="_iHz50KCiEeu73aUlD-mXoA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iIzYUKCiEeu73aUlD-mXoA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iI0mcKCiEeu73aUlD-mXoA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YMR6QKChEeu73aUlD-mXoA" name="maquina">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kT4lQKChEeu73aUlD-mXoA" name="descripcion ">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_x4HmUKChEeu73aUlD-mXoA" name="fechaDeAdqui"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_E8l80KCiEeu73aUlD-mXoA" name="costo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iHz50KCiEeu73aUlD-mXoA" memberEnd="_iIxjIKCiEeu73aUlD-mXoA _iI1NgKCiEeu73aUlD-mXoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iIsqoKCiEeu73aUlD-mXoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iItRsKCiEeu73aUlD-mXoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iI1NgKCiEeu73aUlD-mXoA" name="maquinaempacado" type="_HPKm0J1JEeusd9_7LlRBLQ" association="_iHz50KCiEeu73aUlD-mXoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_svtFkKCiEeu73aUlD-mXoA" memberEnd="_svylIKCiEeu73aUlD-mXoA _sv3doKCiEeu73aUlD-mXoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_svwI4KCiEeu73aUlD-mXoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_svx-EKCiEeu73aUlD-mXoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sv3doKCiEeu73aUlD-mXoA" name="maquinallenado" type="_D3KJMJ1JEeusd9_7LlRBLQ" association="_svtFkKCiEeu73aUlD-mXoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xaidAKCiEeu73aUlD-mXoA" memberEnd="_xamHYKCiEeu73aUlD-mXoA _xaqY0KCiEeu73aUlD-mXoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xak5QKCiEeu73aUlD-mXoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xalgUKCiEeu73aUlD-mXoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xaqY0KCiEeu73aUlD-mXoA" name="maquinalavado" type="_80k3QJ1IEeusd9_7LlRBLQ" association="_xaidAKCiEeu73aUlD-mXoA"/>
+  </packagedElement>
+</uml:Model>
